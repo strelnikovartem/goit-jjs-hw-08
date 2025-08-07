@@ -66,7 +66,7 @@ const images = [
 
 const container = document.querySelector(".gallery");
 
-container.innerHTML("beforeend", createMarkup(images));
+container.innerHTML = createMarkup(images);
 
 function createMarkup(arr) {
   return arr
